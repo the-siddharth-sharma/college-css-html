@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi-Tech Institute of Engineering & Technology, Ghaziabad</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        /* Header & Nav Styling */
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        nav {
+            background-color: #002244;
+            padding: 0.8rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3rem;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        /* Layout Styling */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+            gap: 20px;
+        }
+        main {
+            flex: 3;
+            min-width: 300px;
+        }
+        aside {
+            flex: 1;
+            min-width: 250px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        article {
+            background-color: #f1f5f9;
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 4px solid #003366;
+            border-radius: 4px;
+        }
+        h2 {
+            color: #003366;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #002244;
+            margin-bottom: 8px;
+        }
+        /* Media & Map Styling */
+        .media-container, .map-container {
+            width: 100%;
+            margin-top: 15px;
+        }
+        video, iframe {
+            width: 100%;
+            border-radius: 6px;
+            border: none;
+        }
+        iframe {
+            height: 300px;
+        }
+        /* Aside Lists */
+        aside ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        aside li {
+            margin-bottom: 8px;
+        }
+        /* Footer Styling */
+        footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HEADER -->
+    <header>
+        <h1>Hi-Tech Institute of Engineering & Technology</h1>
+        <p>Ghaziabad, Uttar Pradesh</p>
+    </header>
+
+    <!-- 2. NAV -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#video">Intro Video</a>
+        <a href="#news">News & Events</a>
+        <a href="#location">Location Map</a>
+    </nav>
+
+    <div class="container">
+        <!-- 3. MAIN -->
+        <main>
+            <!-- 4. SECTION -->
+            <section id="about">
+                <h2>About HIET Ghaziabad</h2>
+                <p>
+                    Hi-Tech Institute of Engineering & Technology (HIET) is a premier engineering institution located in Ghaziabad, Uttar Pradesh. Approved by AICTE and affiliated with Dr. A.P.J. Abdul Kalam Technical University (AKTU), HIET provides quality technical and managerial education to empower young minds with knowledge and skills.
+                </p>
+            </section>
+
+            <section id="video">
+                <h2>Campus Intro Video</h2>
+                <div class="media-container">
+                    <!-- Video element featuring a sample MP4 video -->
+                    <video controls poster="https://via.placeholder.com/800x450.png?text=Hi-Tech+Ghaziabad+Campus+Video">
+                        <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+
+            <section id="news">
+                <h2>Latest Highlights</h2>
+                
+                <!-- 5. ARTICLE -->
+                <article>
+                    <h3>Annual Campus Placement Drive</h3>
+                    <p>Top IT and engineering corporations recently visited the HIET campus for placement recruitments, resulting in excellent placement packages for final year students across multiple branches.</p>
+                </article>
+
+                <article>
+                    <h3>State-of-the-Art Labs & Infrastructure</h3>
+                    <p>Our modern computer centers, mechanical workshops, and specialized engineering laboratories ensure practical, hands-on learning for all students.</p>
+                </article>
+            </section>
+
+            <section id="location">
+                <h2>Find Us on Google Maps</h2>
+                <div class="map-container">
+                    <!-- Google Maps Iframe for Hi-Tech Institute of Engineering & Technology, Ghaziabad -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.0772273618175!2d77.4988383!3d28.6574044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf49575555555%3A0xa1f13dd48dcd1e5a!2sHi-Tech%20Institute%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+        </main>
+
+        <!-- 6. ASIDE -->
+        <aside>
+            <h2>Quick Links</h2>
+            <ul>
+                <li>B.Tech (CSE, AI & ML, ECE, ME)</li>
+                <li>Polytechnic Diploma</li>
+                <li>Management (MBA)</li>
+                <li>Computer Applications (BCA)</li>
+                <li>Admissions Info</li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- FOOTER with &copy; entity -->
+    <footer>
+        <p>&copy; 2026 Hi-Tech Institute of Engineering & Technology, Ghaziabad. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
