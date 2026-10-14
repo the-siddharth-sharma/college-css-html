@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-Index Example</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      font-family: "Times New Roman", serif;
+    }
+
+    .container {
+      position: relative;
+      min-height: 100vh;
+      padding: 1px 12px;
+      isolation: isolate;
+    }
+
+    /* Image stays behind the text */
+    .tree {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 580px;
+      height: 800px;
+      object-fit: contain;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Heading stays above the image */
+    h1 {
+      position: relative;
+      z-index: 1;
+      font-size: 100px;
+      margin: 42px 0 60px;
+    }
+
+    /* Paragraph stays above the image */
+    p {
+      position: relative;
+      z-index: -1;
+      font-size: 50px;
+      margin-top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <img
+      src="tree.png"
+      alt="Tree illustration"
+      class="tree"
+    >
+
+    <h1>This is a heading</h1>
+
+    <p>
+      Because the image has a z-index of -1, it will be placed behind the text.
+    </p>
+
+  </div>
+</body>
+</html>
